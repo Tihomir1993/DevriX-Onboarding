@@ -1,0 +1,1 @@
+{"version":3,"sources":["master.scss"],"names":[],"mappings":"AAAA,KACE,cAAe,CADjB,aAII,YAAa","file":"master.min.css","sourcesContent":["body {\n  display: inline;\n\n  .header {\n    display: none;\n    }\n}\n"]}
