@@ -1,1 +1,1 @@
-{"version":3,"sources":["master.scss"],"names":[],"mappings":"AAAA,KACE,SAAU","file":"master.min.css","sourcesContent":["body {\n  color: red;\n}\n"]}
+{"version":3,"sources":["test.scss","master.scss"],"names":[],"mappings":"AAAA;EACI,WAAW,EAAA;;ACCb;EACA,qBAAqB,EAAA","file":"master.min.css","sourcesContent":["h1 {\n    color: blue;\n}","@import \"./test.scss\";\n\n  body {\n  background-color: red;\n}\n"]}

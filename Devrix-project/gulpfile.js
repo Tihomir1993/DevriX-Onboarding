@@ -14,7 +14,7 @@ const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
  
 const files = {
-  scssPath: 'assets/src/sass/**/[^_]*.?(s)css',
+  scssPath: 'assets/src/sass/**/*.scss',
   jsPath: 'assets/src/scripts/**/*.js',
   imagesPath: 'assets/src/images/*',
   htmlPath: './index.html'
@@ -29,7 +29,6 @@ function scssTask() {
       .pipe(sass())
       .pipe(postcss([ autoprefixer() ]))
       .pipe(dest('dist/css'))
-      .pipe(postcss([cssnano()]))
       .pipe(rename({ extname: '.min.css' }))
       .pipe(sourcemaps.write('.'))
       .pipe(dest('dist/css'));
