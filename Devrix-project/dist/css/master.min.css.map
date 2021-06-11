@@ -1,1 +1,1 @@
-{"version":3,"sources":["master.scss"],"names":[],"mappings":"AAAA,KACE,eAAgB,CADlB,aAII,YAAa","file":"master.min.css","sourcesContent":["body {\n  background: #BBB;\n\n  .header {\n    display: none;\n    }\n}\n"]}
+{"version":3,"sources":["master.scss"],"names":[],"mappings":"AAAA,KACE,SAAU","file":"master.min.css","sourcesContent":["body {\n  color: red;\n}\n"]}
