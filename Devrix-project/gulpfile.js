@@ -11,11 +11,13 @@ const sassLint = require('gulp-sass-lint');
 const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const rename = require('gulp-rename');
+const browserSync = require('browser-sync').create();
  
 const files = {
   scssPath: 'assets/src/sass/**/[^_]*.?(s)css',
   jsPath: 'assets/src/scripts/**/*.js',
-  imagesPath: 'assets/src/images/*'
+  imagesPath: 'assets/src/images/*',
+  htmlPath: './index.html'
 }
 
 function scssTask() {
@@ -32,6 +34,7 @@ function scssTask() {
       .pipe(sourcemaps.write('.'))
       .pipe(dest('dist/css'));
 }
+
 
 function jsTask() {
   return src(files.jsPath)
@@ -52,8 +55,16 @@ function imagesTask() {
 }
 
 function watchTask() {
-  watch([files.scssPath, files.jsPath, files.imagesPath], 
-          parallel(scssTask, jsTask, imagesTask));
+  browserSync.init({
+      server: {
+          baseDir: './'
+      }
+  });
+
+  watch(
+      [files.scssPath, files.jsPath, files.imagesPath, files.htmlPath],
+      parallel(scssTask, jsTask, imagesTask)
+  ).on('change', browserSync.reload);
 }
 
 exports.default = series(
