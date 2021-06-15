@@ -1,7 +1,134 @@
-h1 {
-  color: blue; }
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/open-sans.bold.ttf") format("opentype"); }
+
+.link-style {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  border-bottom: 1px solid #000000;
+  font-size: 13px; }
+
+.section-introduction {
+  background: #ffffff;
+  padding: 7em 0; }
+  .section-introduction-wrapper {
+    display: flex;
+    align-items: center; }
+  .section-introduction-first {
+    max-width: 550px;
+    padding-right: 4em; }
+    .section-introduction-first-subheadline {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 2em; }
+    .section-introduction-first-headline {
+      font-size: 60px;
+      font-weight: 500;
+      margin-bottom: 1em; }
+    .section-introduction-first-description {
+      color: #999999;
+      line-height: 27px;
+      margin-bottom: 30px;
+      font-size: 20px; }
+  .section-introduction-second {
+    position: relative;
+    display: block;
+    width: 100%; }
+    .section-introduction-second-image {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      max-width: 540px;
+      height: 500px; }
+      .section-introduction-second-image img {
+        z-index: 2;
+        width: 100%; }
+    .section-introduction-second-frame {
+      margin-left: auto;
+      width: 300px;
+      position: relative;
+      z-index: 3;
+      padding: 1em 1em 1.5em 1em;
+      border: 10px solid #000000;
+      text-align: center;
+      margin-top: 4.5em; }
+      .section-introduction-second-frame-subheadline {
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 4em; }
+      .section-introduction-second-frame-description {
+        margin-bottom: 3em;
+        line-height: 32px;
+        font-size: 24px; }
+      .section-introduction-second-frame i {
+        font-size: 20px; }
+      .section-introduction-second-frame-author {
+        margin-top: 10px; }
+        .section-introduction-second-frame-author-text {
+          text-transform: uppercase;
+          font-size: 12px;
+          margin-top: 2px; }
+          .section-introduction-second-frame-author-text.bold {
+            font-weight: bold; }
+
+.section-column-width {
+  margin: auto;
+  max-width: 1420px; }
+
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/open-sans.bold.ttf") format("opentype"); }
+
+.site-header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5em 2em 2.5em 3em;
+  border-bottom: 2px solid #f3f3f3; }
+
+.site-logo {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-size: 36px; }
+
+.site-menu {
+  display: flex;
+  padding: 0%; }
+  .site-menu li {
+    list-style: none; }
+  .site-menu-item {
+    position: relative;
+    padding: 0 4em;
+    text-transform: capitalize;
+    font-weight: 600; }
+    .site-menu-item a {
+      color: #000000;
+      display: inline-block;
+      text-decoration: none; }
+    .site-menu-item i {
+      vertical-align: middle;
+      margin-left: 1em;
+      font-size: 12px; }
+    .site-menu-item-submenu {
+      display: none; }
+  .site-menu-item:first-child {
+    padding-left: 0; }
+
+.site-menu-item:hover .site-menu-item-submenu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 0; }
+
+@media (max-width: 1200px) {
+  .site-menu-item {
+    padding: 0 1em; } }
 
 body {
-  background-color: red; }
+  margin: 0;
+  padding: 0;
+  background: transparent; }
 
 /*# sourceMappingURL=master.min.css.map */

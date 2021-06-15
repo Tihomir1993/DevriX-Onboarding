@@ -1,0 +1,48 @@
+@font-face {
+  font-family: OpenSans;
+  src: url("../fonts/open-sans.bold.ttf") format("opentype"); }
+
+.site-header {
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5em 2em 2.5em 3em;
+  border-bottom: 2px solid #f3f3f3; }
+
+.site-logo {
+  font-family: OpenSans;
+  font-weight: bold;
+  font-size: 36px; }
+
+.site-menu {
+  display: flex;
+  padding: 0%; }
+  .site-menu li {
+    list-style: none; }
+  .site-menu-item {
+    position: relative;
+    padding: 0 4em;
+    text-transform: capitalize;
+    font-weight: 600; }
+    .site-menu-item a {
+      color: #000000;
+      display: inline-block;
+      text-decoration: none; }
+    .site-menu-item i {
+      vertical-align: middle;
+      margin-left: 1em; }
+    .site-menu-item-submenu {
+      display: none; }
+  .site-menu-item:first-child {
+    padding-left: 0; }
+
+.site-menu-item:hover .site-menu-item-submenu {
+  display: block;
+  position: absolute;
+  top: 100%;
+  padding: 0; }
+
+@media (max-width: 1200px) {
+  .site-menu-item {
+    padding: 0 1em; } }
