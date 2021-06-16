@@ -1,0 +1,44 @@
+.site-footer {
+    padding: 6.25em 0 6.25em 0;
+    .row {
+        justify-content: space-between;
+        margin-bottom: 3em;
+    }
+    .site-logo {
+        text-align: center;
+        font-size: 2em;
+        i {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+    }
+
+    .contact-email {
+        color: $description-color;
+    }
+
+    .social-contact {
+        text-align: center;
+        span {
+            display: block;
+            font-size: 1em;
+        }
+
+        a {
+            padding: 0.5em;
+            border-radius: 10em;
+            background-color: $border;
+            margin: 0 0.4em;
+        }
+        i {
+            width: 1em;
+            color: $bg-primary;
+        }
+    }
+
+    .heading-desc {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1em;
+    }
+}

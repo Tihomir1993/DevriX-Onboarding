@@ -1,0 +1,34 @@
+.heading-subtitle {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+.heading-title {
+    font-size: 3.75em;
+    font-weight: 500;
+
+}
+
+.heading-desc {
+    color: $description-color;
+    line-height: 1.675em;
+    margin-bottom: 2.875em;
+    font-size: 1.3em;
+}
+
+.overlay-img {
+    i {
+        font-size: 1.125em;
+    }
+    &-text {
+        margin-left: .5em;
+        text-transform: capitalize;
+    }
+}
+
+.image-wrap {
+    width: 100%;
+    img {
+        width: 100%;
+    }
+}

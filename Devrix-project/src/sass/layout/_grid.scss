@@ -1,4 +1,16 @@
-.section-column-width {
+.row{
     margin: auto;
     max-width: 1420px;
+    display: flex;
+    align-items: center;
+}
+
+.column-7 {
+    position: relative;
+    width: 100%;
+}
+
+.column-5 {
+    position: relative;
+    width: 100%;
 }

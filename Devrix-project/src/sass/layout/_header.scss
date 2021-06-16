@@ -2,65 +2,18 @@
 @import '../base/fonts';
 
 .site-header {
-    background: $white;
+    background: $bg-primary;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 2.5em 2em 2.5em 3em;
-    border-bottom: 2px solid $grey-line;
+    border-bottom: 2px solid $bottom-line;
 }
 
 .site-logo {
     font-family: OpenSans;
     font-weight: bold;
-    font-size: 36px;
+    font-size: 2.25em;
 }
 
-.site-menu {
-    display: flex;
-    padding: 0%;
-    li {
-        list-style: none;
-    }
-    &-item {
-        position: relative;
-        padding: 0 4em;
-        text-transform: capitalize;
-        font-weight: 600;
 
-        a {
-            color: $black;
-            display: inline-block;
-            text-decoration: none;
-        }
-        i {
-            vertical-align: middle;
-            margin-left: 1em;
-            font-size: 12px;
-        }
-
-        &-submenu {
-            display: none;
-        }
-    }
-    &-item:first-child {
-        padding-left: 0;
-    }
-}
-
-.site-menu-item:hover {
-    .site-menu-item-submenu {
-        display: block;
-        position: absolute;
-        top: 100%;
-        padding: 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    .site-menu {
-        &-item {
-            padding: 0 1em;
-        }
-    }
-}
