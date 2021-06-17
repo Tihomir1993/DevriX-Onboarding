@@ -1,12 +1,21 @@
 .site-footer {
     padding: 6.25em 0 6.25em 0;
+    font-family: sans-serif;
+
+        .heading-desc {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: .8em;
+            word-spacing: .1em;
+            font-family: sans-serif;
+            color: $description-color;
+        }
     .row {
         justify-content: space-between;
         margin-bottom: 3em;
     }
     .site-logo {
         text-align: center;
-        font-size: 2em;
         i {
             font-size: 1.5em;
             margin-bottom: 20px;
@@ -15,13 +24,15 @@
 
     .contact-email {
         color: $description-color;
+        font-family: sans-serif;
     }
 
     .social-contact {
         text-align: center;
         span {
             display: block;
-            font-size: 1em;
+            font-size: 1.25em;
+            margin-bottom: 2em;
         }
 
         a {
@@ -35,10 +46,5 @@
             color: $bg-primary;
         }
     }
-
-    .heading-desc {
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 1em;
-    }
+  
 }

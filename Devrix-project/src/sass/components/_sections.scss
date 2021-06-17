@@ -1,148 +1,40 @@
 .section-introduction {
-    background: $bg-primary;
     padding: 7em 0;
-
     .column-5 {
         max-width: 38.375em;
     }
 
-    .section-heading {
-        padding-right: 3em;
-    }
-
     .frame {
         margin-left: auto;
-        max-width: 18.75em;
-        position: relative;
-        z-index: 3;
-        padding: 1em 1em 1.5em 1em;
-        border: 10px solid $border;
-        text-align: center;
-        margin-top: 4.5em;
-
-        &-subtitle {
-            font-size: 0.875em;
-            text-transform: uppercase;
-            margin-bottom: 4em;
-        }
-
-        &-description {
-            margin-bottom: 3em;
-            line-height: 1.5em;
-            font-size: 1.5em;
-        }
-        i {
-            font-size: 1.25em;
-        }
-        &-author {
-            &-text {
-                text-transform: uppercase;
-                font-size: 0.75em;
-                margin: 2px 0;
-            }
-            span {
-                display: block;
-            }
-        }
     }
-
-    .image-wrap {
-        z-index: 1;
-        position: absolute;
-        top: 0;
-        max-width: 33.75em;
-        max-height: 43.75em;
-    
-        img {
-            z-index: 2;
-            width: 100%;
-            height: 100%;
-        }
-    }
-    
 }
-
 
 .section-literally {
     padding: 12.5em 0 10.25em 0;
-    background: $bg-color-section;
-    .row:first-child {
-        display: block;
-        text-align: center;
-    }
+ 
     .section-heading {
-        max-width: 43.125em;
-        margin: auto;
-        .heading-title {
-            font-size: 3.535em;
-            text-transform: capitalize;
-        }
-    }
-
-    .image-wrap {
-        position: relative;
-        height: 28.125em;
-        img {
-            height: 100%;
-        }
-    }
-
-    .overlay-img {
-        position: absolute;
-        bottom: 0;
-        padding: 1.2em 1.8em .5em .5em;
-        background: $bg-color-section;
-    }
-    .section-teaser {
-        padding: 0 1em;
-        .heading-title {
-            font-size: 1.575em;
-            font-weight: bold;
-            margin: 1em 0;
-        }
-
-        .heading-subtitle {
-            font-size: 1.075em;
-            text-transform: capitalize;
-        }
-        .heading-desc {
-            margin-bottom: 2em;
+        &-center {
+            max-width: 43.125em;
         }
     }
 }
 
 .section-business {
-    background: $bg-color-section;
     padding: 10em 1.5em 10em 1.5em;
-
-    .heading-title {
-        font-size: 3em;
-        margin-bottom: 1.8em;
-    }
-    .row:first-child {
-        display: block;
-        text-align:center;
-        max-width: 55.25em;
-    }
 
     .image-wrap {
         margin-right: 6.25em;
     }
 
     .section-heading {
-        
-        .heading-desc {
-            font-size: 1.45em;
-            line-height: 1.35em;
-            color: $border;
+        &-center {
+            max-width: 55.25em;
         }
-
-        .button-cta {
-            font-size: 1.45em;
-            text-transform: unset;
-            font-weight: bold;
-            padding-bottom: .5em;
+        .heading-title {
+            &-center {
+                font-size: 3em;
+                margin-bottom: 1.8em;
+            }
         }
     }
 }
-

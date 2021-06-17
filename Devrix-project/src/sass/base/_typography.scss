@@ -1,0 +1,9 @@
+@import "./variables";
+.section-bg {
+    &-primary {
+        background-color: $bg-primary;
+    }
+    &-secondary {
+        background-color: $bg-secondary;
+    }
+}

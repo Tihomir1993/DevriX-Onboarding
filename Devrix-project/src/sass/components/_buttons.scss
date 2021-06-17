@@ -4,7 +4,15 @@
     color: $list-menu-item-color;
     border-bottom: 1px solid $border;
     font-size: 13px;
+
+    &-font {
+        font: 1.45em sans-serif;
+        text-transform: unset;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+    }
 }
+
 button {
     background: transparent;
     border: 0;

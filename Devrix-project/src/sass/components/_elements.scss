@@ -1,34 +1,140 @@
-.heading-subtitle {
-    font-size: 0.75em;
-    text-transform: uppercase;
-    margin-bottom: 2em;
-}
-.heading-title {
-    font-size: 3.75em;
-    font-weight: 500;
-
-}
-
-.heading-desc {
-    color: $description-color;
-    line-height: 1.675em;
-    margin-bottom: 2.875em;
-    font-size: 1.3em;
-}
-
-.overlay-img {
-    i {
-        font-size: 1.125em;
+.section-heading {
+    .heading-subtitle {
+        font-size: 0.75em;
+        text-transform: uppercase;
+        margin-bottom: 2em;
     }
-    &-text {
-        margin-left: .5em;
+    .heading-title {
+        font-size: 3.75em;
+        font-weight: 500;
+
+        &-capitalize {
+            font-size: 3.535em;
+            text-transform: capitalize;
+        }
+
+        &-center {
+            text-align: center;
+        }
+    }
+
+    .heading-desc {
+        color: $description-color;
+        line-height: 1.675em;
+        margin-bottom: 2.875em;
+        font-size: 1.3em;
+
+        &-center {
+            text-align: center;
+        }
+
+        &-font {
+            font: 1.45em sans-serif;
+            line-height: 1.35em;
+            color: $border;
+        }
+    }
+
+    &-center {
+        margin: auto;
+    }
+
+    &-right {
+        padding-right: 3em;
+    }
+}
+
+.frame {
+    max-width: 18.75em;
+    position: relative;
+    z-index: 3;
+    padding: 1em 1em 1.5em 1em;
+    border: 10px solid $border;
+    text-align: center;
+    margin-top: 4.5em;
+
+    &-subtitle {
+        font-size: 0.875em;
+        text-transform: uppercase;
+        margin-bottom: 4em;
+    }
+
+    &-description {
+        margin-bottom: 3em;
+        line-height: 1.5em;
+        font-size: 1.5em;
+    }
+    i {
+        font-size: 1.25em;
+    }
+    &-author {
+        &-text {
+            text-transform: uppercase;
+            font-size: 0.75em;
+            margin: 2px 0;
+        }
+        span {
+            display: block;
+        }
+    }
+}
+
+.teaser {
+    padding: 0 1em;
+    &-title {
+        font: 1.575em sans-serif;
+        font-weight: bold;
+        margin: 1em 0;
         text-transform: capitalize;
+    }
+
+    &-subtitle {
+        font-size: 1.075em;
+        text-transform: capitalize;
+    }
+    &-description {
+        margin-bottom: 2em;
+        color: $description-color;
+        font-family: sans-serif;
+    }
+
+    &-overlay {
+        position: absolute;
+        bottom: 0;
+        padding: 1.2em 1.8em 0.5em 0.5em;
+        background: $bg-secondary;
+    }
+
+    &-image-wrap {
+        position: relative;
+        width: 100%;
+        img {
+            height: 100%;
+            width: 100%;
+        }
     }
 }
 
 .image-wrap {
-    width: 100%;
-    img {
-        width: 100%;
+    &-absolute {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        max-width: 33.75em;
+        max-height: 43.75em;
+
+        img {
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+        }
     }
 }
+
+    .site-logo {
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 2.25em;
+    }
+    
+
